@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Myweather</class>
+ <widget class="QWidget" name="Myweather">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1000</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>1000</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1000</width>
+     <height>700</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+	border-image: url(:/pictur/bg_weather.jpg);
+}
+#frame_2{
+	
+	background-color: rgba(131, 131, 131, 100);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1000</width>
+      <height>700</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1000</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1000</width>
+      <height>700</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox
+{
+	background-color: rgba(255, 255, 255, 100);
+	color: rgb(0, 0, 0);
+border: 2px solid rgb(153, 230, 230);
+border-radius:5px;
+margin-top:2.1ex;
+font-family:宋体;
+font:bold 30px;
+color: ;
+	color: rgb(0, 255, 255);
+}
+ 
+QGroupBox::title
+{
+subcontrol-origin:margin;
+subcontrol-position:top center;
+}
+
+QLabel{
+	border-radius: 2px;
+	background-color: rgba(255, 255, 255,200);
+
+	font-size: 18px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+
+border-style: solid;
+border-width: 2px;
+border: 1px solid rgb(176, 176, 176);
+
+
+
+
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>0</y>
+       <width>351</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>查询</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>城市</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <item>
+         <property name="text">
+          <string>深圳</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>上海</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>长沙</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_find">
+        <property name="text">
+         <string>查询天气</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>531</width>
+       <height>671</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>今日天气</string>
+     </property>
+     <widget class="QLabel" name="label_1temp">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>380</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>-1</pointsize>
+        <weight>75</weight>
+        <italic>true</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-family: &quot;Microsoft YaHei&quot;;
+font-style: italic;
+font-weight: bold;
+color: rgb(0, 0, 0);
+font: bold italic 50px &quot;Microsoft YaHei&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>30°</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1weather">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>480</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>晴天</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1week">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>480</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>星期三</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1quality">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>560</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>空气质量：优</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1low">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>560</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最低温度：20</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1date">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>620</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>日期：2020.12.01</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1high">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>560</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最高温度：36</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_cityInfo">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>40</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>广东省深圳市</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_1notice">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>620</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小贴士：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_gif">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>481</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/pictur/sun.gif);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>100</y>
+       <width>391</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>明日预报</string>
+     </property>
+     <widget class="QLabel" name="label_2low">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最低温度：20</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2high">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最高温度：36</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2weather">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小雨</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2notice">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小贴士：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2date">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>150</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>日期：2020.12.01</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2week">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>星期三</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>600</x>
+       <y>410</y>
+       <width>391</width>
+       <height>271</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>后日预报</string>
+     </property>
+     <widget class="QLabel" name="label_3low">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最低温度：20</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3high">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>141</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>最高温度：36</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3weather">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>40</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小雨</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3notice">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>220</y>
+        <width>341</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>小贴士：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3date">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>150</y>
+        <width>171</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>日期：2020.12.01</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3week">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>星期三</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

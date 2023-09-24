@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pictur/lamp_close.png</file>
+        <file>pictur/lamp_open.png</file>
+        <file>pictur/fan_close.png</file>
+        <file>pictur/fan_open.png</file>
+        <file>music/Alec Benjamin - Oh My God.mp3</file>
+        <file>music/Dan + Shay、Justin Bieber - 10,000 Hours.mp3</file>
+        <file>pictur/air_close.png</file>
+        <file>pictur/air_open.png</file>
+        <file>pictur/bg_home.jpg</file>
+        <file>pictur/bg_home1.jpg</file>
+        <file>pictur/bg_music.jpg</file>
+        <file>pictur/bg_music1.jpg</file>
+        <file>pictur/bg_weather.jpg</file>
+        <file>pictur/1.png</file>
+        <file>pictur/music.gif</file>
+        <file>pictur/cloud.gif</file>
+        <file>pictur/sun.gif</file>
+        <file>pictur/rain.gif</file>
+    </qresource>
+</RCC>
